@@ -76,7 +76,6 @@ one instance of the object.
 - [Configuring Idea, Gradle, and Dagger2](https://stackoverflow.com/a/52324748/2085356)
 - [Jake Wharton's video on Dagger2](https://www.youtube.com/watch?v=plK0zyRLIP8)
 - [Excellent video on Dagger2](https://www.youtube.com/watch?v=IKD2-MAkXyQ)
-- [Simple tutorial](https://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345)
 - [Longer tutorial](http://www.vogella.com/tutorials/Dagger/article.html)
 - [Even longer tutorial](https://medium.com/@Zhuinden/that-missing-guide-how-to-use-dagger2-ef116fbea97)
 - [Dagger2 and Android](https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2)
