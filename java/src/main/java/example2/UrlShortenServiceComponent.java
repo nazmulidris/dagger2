@@ -14,9 +14,17 @@
  * limitations under the License.
  */
 
-package example1;
+package example2;
 
-public interface Log {
+import javax.inject.Singleton;
 
-    void log(String message);
+import dagger.Component;
+
+@Singleton
+@Component(modules = {NetworkClientModule.class,
+                      ServiceProviderModule.class,
+                      UrlShortenServiceModule.class})
+interface UrlShortenServiceComponent {
+
+    UrlShortenService urlShortnService();
 }

@@ -14,9 +14,21 @@
  * limitations under the License.
  */
 
-package example1;
+package example2;
 
-public interface Log {
+import javax.inject.Singleton;
 
-    void log(String message);
+import dagger.Module;
+import dagger.Provides;
+import okhttp3.OkHttpClient;
+
+@Module
+class NetworkClientModule {
+
+    @Provides
+    @Singleton
+    OkHttpClient provideOkHttpClient() {
+        return new OkHttpClient.Builder().build();
+    }
+
 }

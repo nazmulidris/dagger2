@@ -14,9 +14,26 @@
  * limitations under the License.
  */
 
-package example1;
+package example2;
 
-public interface Log {
+import java.util.HashMap;
 
-    void log(String message);
+import javax.inject.Named;
+
+import dagger.Module;
+import dagger.Provides;
+import example2.ServiceProviderModule.ServiceUrlKeys;
+import okhttp3.OkHttpClient;
+
+import static example2.ServiceProviderModule.TINYURL_SERVICE;
+
+@Module
+class UrlShortenServiceModule {
+
+    @Provides
+    public UrlShortenService providesUrlShortenService(
+            OkHttpClient okHttpClient,
+            @Named(TINYURL_SERVICE) HashMap<ServiceUrlKeys, String> serviceConfig) {
+        return new UrlShortenServiceImpl(okHttpClient, serviceConfig);
+    }
 }

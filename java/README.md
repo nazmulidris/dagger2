@@ -81,3 +81,5 @@ one instance of the object.
 - [Tutorial - Blood example](https://www.ricston.com/blog/dependency-injection-dagger-2/)
 - [Tutorial - Missing Guide](https://medium.com/@Zhuinden/that-missing-guide-how-to-use-dagger2-ef116fbea97)
 - [Tutorial - Codepath Dagger2 and Android](https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2)
+- [SO - question about @Named](https://stackoverflow.com/questions/45080227/dagger2-where-inject-named-provides-in-dependent-module)
+- [SO - question about constructor param](https://stackoverflow.com/questions/32076244/dagger-2-injecting-parameters-of-constructor)

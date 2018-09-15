@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package example1;
+package example2;
 
-public interface Log {
+interface UrlShortenService {
 
-    void log(String message);
+    String getShortUrl(String longUrl);
 }

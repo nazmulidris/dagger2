@@ -24,8 +24,10 @@ import example1.Log;
 
 @Module
 public class LogModule {
-    @Provides @Singleton
-    public Log providesLog(){
+
+    @Provides
+    @Singleton
+    public Log providesLog() {
         return new LogImpl();
     }
 }

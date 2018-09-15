@@ -24,6 +24,8 @@ import example1.simplelog.LogModule;
 @Singleton
 @Component(modules = {LogModule.class})
 public interface LogComponent {
+
     Log providesLog();
+
     void injectDepsIntoFieldsOf(Main main);
 }
