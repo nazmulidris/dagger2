@@ -8,6 +8,7 @@
 - [Main class](#main-class)
 - [Modules](#modules)
 - [Component](#component)
+- [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -132,3 +133,8 @@ interface UrlShortenServiceComponent {
     UrlShortenService urlShortenService();
 }
 ```
+
+# References
+- [OkHttp maven](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp/3.9.0)
+- [SO - @Named](https://stackoverflow.com/questions/45080227/dagger2-where-inject-named-provides-in-dependent-module)
+- [SO - @Inject constructor params](https://stackoverflow.com/questions/32076244/dagger-2-injecting-parameters-of-constructor)
