@@ -57,7 +57,19 @@ class Main {
     }
 
     public Main() {
-        service = DaggerUrlShortenServiceComponent.create().urlShortenService();
+        /*
+        Instead of using create(), if you use builder() you can pass arguments to any of the
+        module constructors (if they take any params). This is a way to pass information that
+        is not available in the dependency graph that Dagger 2 generates. In this case, each
+        module has a default constructor, so there's really no need to do it this way, and
+        create() would suffice.
+         */
+        UrlShortenServiceComponent component = DaggerUrlShortenServiceComponent.builder()
+                .networkClientModule(new NetworkClientModule())
+                .urlShortenServiceModule(new UrlShortenServiceModule())
+                .serviceProviderModule(new ServiceProviderModule())
+                .build();
+        service = component.urlShortenService();
     }
 
     public void run() {

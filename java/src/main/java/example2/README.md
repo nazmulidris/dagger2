@@ -6,6 +6,7 @@
 
 - [Introduction](#introduction)
 - [Main class](#main-class)
+  - [create() vs builder().build()](#create-vs-builderbuild)
 - [Modules](#modules)
 - [Component](#component)
 - [References](#references)
@@ -89,6 +90,26 @@ class Main {
 When the `Main` class uses the interface, it doesn't know anything about how it's implemented or
 what its dependencies are. And that is exactly what we want. In order to hide the dependencies and
 construction details, we have to create a few modules and a component. 
+
+## create() vs builder().build()
+
+Instead of using `create()`, if you use `builder()` you can pass arguments to any of the
+module constructors (if they take any params). This is a way to pass information that
+is not available in the dependency graph that Dagger 2 generates. In this case, each
+module has a default constructor, so there's really no need to do it this way, and
+`create()` would suffice.
+
+So the one line in the `Main` constructor can be replaced with the following:
+```java
+public Main() {
+    UrlShortenServiceComponent component = DaggerUrlShortenServiceComponent.builder()
+            .networkClientModule(new NetworkClientModule())
+            .urlShortenServiceModule(new UrlShortenServiceModule())
+            .serviceProviderModule(new ServiceProviderModule())
+            .build();
+    service = component.urlShortenService();
+}
+```
 
 # Modules
 
