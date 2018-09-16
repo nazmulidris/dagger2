@@ -26,5 +26,5 @@ import dagger.Component;
                       UrlShortenServiceModule.class})
 interface UrlShortenServiceComponent {
 
-    UrlShortenService urlShortnService();
+    UrlShortenService urlShortenService();
 }

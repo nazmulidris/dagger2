@@ -57,7 +57,7 @@ class Main {
     }
 
     public Main() {
-        service = DaggerUrlShortenServiceComponent.create().urlShortnService();
+        service = DaggerUrlShortenServiceComponent.create().urlShortenService();
     }
 
     public void run() {
