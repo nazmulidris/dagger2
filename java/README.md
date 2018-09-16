@@ -4,7 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Dagger 2](#dagger-2)
+- [About Dagger 2](#about-dagger-2)
   - [Dependency providers](#dependency-providers)
   - [Dependency consumers](#dependency-consumers)
   - [Connecting consumers and providers](#connecting-consumers-and-providers)
@@ -14,7 +14,14 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Dagger 2
+# Examples
+There are 2 examples in this project. You can import this project into IntelliJ
+IDEA as a Maven project. Here are the 2 examples.
+
+1. [Simple Example 1](https://github.com/nazmulidris/dagger2/tree/master/java/src/main/java/example1)
+1. [Complex Example 2](https://github.com/nazmulidris/dagger2/tree/master/java/src/main/java/example2)
+
+# About Dagger 2
 
 Dagger 2 is dependency injection framework. It is based on the Java 
 Specification Request (JSR) 330. It uses code generation and is based on
