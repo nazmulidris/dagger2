@@ -4,7 +4,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Examples](#examples)
 - [About Dagger 2](#about-dagger-2)
+- [Annotations](#annotations)
   - [Dependency providers](#dependency-providers)
   - [Dependency consumers](#dependency-consumers)
   - [Connecting consumers and providers](#connecting-consumers-and-providers)
@@ -26,6 +28,13 @@ IDEA as a Maven project. Here are the 2 examples.
 Dagger 2 is dependency injection framework. It is based on the Java 
 Specification Request (JSR) 330. It uses code generation and is based on
 annotations. The generated code is very relatively easy to read and debug.
+
+To learn more about Dagger 2, here are some excellent resources.
+1. [Excellent video on Dependency Injection](https://www.youtube.com/watch?v=IKD2-MAkXyQ)
+1. [Excellent video on Dagger 2 by Jake Wharton](https://www.youtube.com/watch?v=plK0zyRLIP8)
+1. [Excellent tutorial on Dagger 2 and Android tutorial](https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2)
+
+# Annotations
 
 Dagger 2 uses the following annotations:
 
@@ -83,8 +92,8 @@ one instance of the object.
 
 # References
 - [Configuring Idea, Gradle, and Dagger2](https://stackoverflow.com/a/52324748/2085356)
+- [Excellent video on Dependency Injection](https://www.youtube.com/watch?v=IKD2-MAkXyQ)
 - [Jake Wharton's video on Dagger2](https://www.youtube.com/watch?v=plK0zyRLIP8)
-- [Excellent video on Dagger2](https://www.youtube.com/watch?v=IKD2-MAkXyQ)
 - [Tutorial - Kotlin, Android, Dagger2](https://www.raywenderlich.com/262-dependency-injection-in-android-with-dagger-2-and-kotlin)
 - [Tutorial - Vogella](http://www.vogella.com/tutorials/Dagger/article.html)
 - [Tutorial - Blood example](https://www.ricston.com/blog/dependency-injection-dagger-2/)
