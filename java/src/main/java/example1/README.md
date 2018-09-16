@@ -1,8 +1,10 @@
+# Simple Java example
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Simple Java example](#simple-java-example)
+- [Introduction](#introduction)
 - [Separation of concerns](#separation-of-concerns)
 - [Using a Component](#using-a-component)
 - [Creating a Component](#creating-a-component)
@@ -10,7 +12,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Simple Java example
+# Introduction
 
 This is an extremely basic example to get started with Dagger 2. The `Main` class simply logs a
 message to the console. However, it does not create a `Log` object itself, and relies on Dagger 2

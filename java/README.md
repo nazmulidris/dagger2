@@ -1,8 +1,10 @@
+# Dependency Injection
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Dependency Injection](#dependency-injection)
+- [Dagger 2](#dagger-2)
   - [Dependency providers](#dependency-providers)
   - [Dependency consumers](#dependency-consumers)
   - [Connecting consumers and providers](#connecting-consumers-and-providers)
@@ -12,7 +14,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Dependency Injection
+# Dagger 2
 
 Dagger 2 is dependency injection framework. It is based on the Java 
 Specification Request (JSR) 330. It uses code generation and is based on
