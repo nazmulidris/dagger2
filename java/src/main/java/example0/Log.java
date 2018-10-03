@@ -17,5 +17,6 @@
 package example0;
 
 interface Log {
+
     void log(String msg);
 }

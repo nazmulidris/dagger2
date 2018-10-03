@@ -23,7 +23,8 @@ import javax.inject.Singleton;
 class ConsoleLogger implements Log {
 
     @Inject
-    ConsoleLogger() {}
+    ConsoleLogger() {
+    }
 
     @Override
     public void log(String msg) {

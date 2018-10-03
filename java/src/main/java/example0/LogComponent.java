@@ -25,11 +25,16 @@ import dagger.Provides;
 @Component(modules = {LogModule.class})
 @Singleton
 interface LogComponent {
+
     Main providesMain();
 }
 
 @Module
 class LogModule {
-    @Provides @Singleton
-    Log providesLogger(){return new ConsoleLogger();}
+
+    @Provides
+    @Singleton
+    Log providesLogger(ConsoleLogger logger) {
+        return logger;
+    }
 }
